@@ -1,22 +1,11 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-import { CoursesRoutingModule } from './courses-routing.module';
-import { CoursesComponent } from './courses/courses.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import {MatTableModule} from '@angular/material/table';
+import { AppMaterialModule } from "./../shared/app-material/app-material.module";
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { CoursesRoutingModule } from "./courses-routing.module";
+import { CoursesComponent } from "./courses/courses.component";
 
 @NgModule({
-  declarations: [
-    CoursesComponent
-  ],
-  imports: [
-    CommonModule,
-    CoursesRoutingModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatTableModule
-  ]
+  declarations: [CoursesComponent],
+  imports: [CommonModule, CoursesRoutingModule, AppMaterialModule],
 })
-export class CoursesModule { }
+export class CoursesModule {}
