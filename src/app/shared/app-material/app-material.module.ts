@@ -3,8 +3,10 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
 import { MatTableModule } from "@angular/material/table";
 import { MatCardModule } from "@angular/material/card";
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 
 @NgModule({
-  exports: [MatToolbarModule, MatIconModule, MatTableModule, MatCardModule],
+  exports: [MatToolbarModule, MatIconModule, MatTableModule, MatCardModule,MatProgressSpinnerModule],
 })
 export class AppMaterialModule {}
